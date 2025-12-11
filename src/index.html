@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Hello World
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script type="module" src="./scripts/main.js"></script>
+    <title>Black Lemon</title>
+  </head>
+  <body>
+    <header class="aa-header">
+      <div class="aa-header__bar">
+        <button
+          class="aa-icon-btn"
+          type="button"
+          aria-label="Open navigation"
+          data-nav-toggle
+        >
+          <span class="aa-burger-line"></span>
+          <span class="aa-burger-line"></span>
+          <span class="aa-burger-line"></span>
+        </button>
+
+        <button class="aa-icon-btn" type="button" aria-label="Search">
+          <img src="./assets/images/icons/search.svg" alt="" class="aa-icon" />
+        </button>
+
+        <a href="/" class="aa-logo">
+          <img src="./assets/images/logo/logo.svg" alt="Act+Acre" />
+        </a>
+
+        <button class="aa-icon-btn" type="button" aria-label="Account">
+          <img src="./assets/images/icons/user.svg" alt="" class="aa-icon" />
+        </button>
+
+        <button
+          class="aa-icon-btn"
+          type="button"
+          aria-label="Cart"
+          data-cart-button
+        >
+          <img src="./assets/images/icons/bag.svg" alt="" class="aa-icon" />
+        </button>
+      </div>
+
+      <nav class="aa-mobile-nav" data-mobile-nav>
+        <a href="#" class="aa-mobile-nav__link">Shop</a>
+        <a href="#" class="aa-mobile-nav__link">Science</a>
+        <a href="#" class="aa-mobile-nav__link">Press</a>
+        <a href="#" class="aa-mobile-nav__link">Blogs</a>
+        <a href="#" class="aa-mobile-nav__link">Tutorial</a>
+      </nav>
+    </header>
+
+  </body>
 </html>
