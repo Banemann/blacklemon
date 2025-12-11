@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import './components/header.css';
+@import './components/breadcrumb.css';
+@import './components/product.css';
+@import './components/ingredients.css';
+@import './components/related-products.css';
+
+:root {
+  --text-color: #4D4D4D;
+  --text-color-2: #9F938B;
+  --bg-color: #FFFFFF;
+  --bg-color-secondary: #F6F6F5;
+  --button-bg: #BFABAB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  line-height: 160%;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: normal;
+  letter-spacing: 0;
+  line-height: 160%;
+  color: var(--text-color);
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 160%;
+  color: var(--text-color);
+}
+

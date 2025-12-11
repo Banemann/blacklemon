@@ -1,0 +1,40 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 24px;
+  background-color: var(--bg-color-secondary);
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  line-height: 160%;
+  color: var(--text-color-2);
+}
+
+.breadcrumb__back {
+  display: flex;
+  align-items: center;
+  color: var(--text-color-2);
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+.breadcrumb__link {
+  color: var(--text-color-2);
+  text-decoration: none;
+  font-weight: 300;
+  transition: opacity 0.2s;
+}
+
+.breadcrumb__link:hover {
+  opacity: 0.7;
+}
+
+.breadcrumb__link--active {
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+.breadcrumb__separator {
+  color: var(--text-color-2);
+}

@@ -8,27 +8,31 @@
   <body>
     <header class="aa-header">
       <div class="aa-header__bar">
-        <button class="aa-icon-btn" type="button" aria-label="Open navigation" data-nav-toggle="">
-          <span class="aa-burger-line"></span>
-          <span class="aa-burger-line"></span>
-          <span class="aa-burger-line"></span>
-        </button>
+        <div class="aa-header__left">
+          <button class="aa-icon-btn" type="button" aria-label="Open navigation" data-nav-toggle="">
+            <span class="aa-burger-line"></span>
+            <span class="aa-burger-line"></span>
+            <span class="aa-burger-line"></span>
+          </button>
 
-        <button class="aa-icon-btn" type="button" aria-label="Search">
-          <img src="/search.2cff5320.svg" alt="" class="aa-icon">
-        </button>
+          <button class="aa-icon-btn" type="button" aria-label="Search">
+            <img src="/search.2cff5320.svg" alt="" class="aa-icon">
+          </button>
+        </div>
 
         <a href="/" class="aa-logo">
           <img src="/logo.9032ea0c.svg" alt="Act+Acre">
         </a>
 
-        <button class="aa-icon-btn" type="button" aria-label="Account">
-          <img src="/user.66c2792f.svg" alt="" class="aa-icon">
-        </button>
+        <div class="aa-header__right">
+          <button class="aa-icon-btn" type="button" aria-label="Account">
+            <img src="/user.66c2792f.svg" alt="" class="aa-icon">
+          </button>
 
-        <button class="aa-icon-btn" type="button" aria-label="Cart" data-cart-button="">
-          <img src="/bag.ec222323.svg" alt="" class="aa-icon">
-        </button>
+          <button class="aa-icon-btn" type="button" aria-label="Cart" data-cart-button="">
+            <img src="/bag.ec222323.svg" alt="" class="aa-icon">
+          </button>
+        </div>
       </div>
 
       <nav class="aa-mobile-nav" data-mobile-nav="">
@@ -40,6 +44,185 @@
       </nav>
     </header>
 
-  
+
+    <main class="product-section">
+    <nav class="breadcrumb">
+      <a href="#" class="breadcrumb__back" aria-label="Go back">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </a>
+      <a href="#" class="breadcrumb__link">ALL PRODUCTS</a>
+      <span class="breadcrumb__separator">/</span>
+      <a href="#" class="breadcrumb__link">HAIRCARE</a>
+      <span class="breadcrumb__separator">/</span>
+      <a href="javascript:location.reload()" class="breadcrumb__link breadcrumb__link--active">RESTORATIVE HAIR MASK</a>
+    </nav>
+
+    <section class="product-hero">
+      <img src="/spot.dc9a5463.svg" alt="Restorative Hair Mask" class="product-hero__image">
+    </section>
+
+    <div class="product-heading">
+      <h1 class="product-title">RESTORATIVE HAIR MASK</h1>
+      <h2 class="product-subtitle">NUTURISHMENT IN A BOTTLE</h2>
+    </div>
+
+    <div class="divider-padding">
+        <div class="divider" aria-hidden="true"></div>
+    </div>
+
+    <p class="product-copy">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere ac ut.
+    </p>
+
+    <section class="product-features">
+      <div class="feature">
+        <img src="/organic.d2caabca.svg" alt="" class="feature__icon">
+        <span class="feature__text">100% ORGANIC</span>
+      </div>
+      <div class="feature">
+        <img src="/organic.d2caabca.svg" alt="" class="feature__icon">
+        <span class="feature__text">100% ORGANIC</span>
+      </div>
+      <div class="feature">
+        <img src="/organic.d2caabca.svg" alt="" class="feature__icon">
+        <span class="feature__text">100% ORGANIC</span>
+      </div>
+      <div class="feature">
+        <img src="/organic.d2caabca.svg" alt="" class="feature__icon">
+        <span class="feature__text">100% ORGANIC</span>
+      </div>
+    </section>
+
+    <div class="divider-padding">
+        <div class="divider" aria-hidden="true"></div>
+    </div>
+    
+     <section class="purchase-options" role="group" aria-label="Purchase options">
+      <label class="option">
+        <input type="radio" name="purchase" checked="">
+        <span class="option__control" aria-hidden="true"></span>
+        <span class="option__label">
+          <span class="option__text">Buy Once</span>
+          <span class="option__divider">|</span>
+          <span class="option__price">$38</span>
+        </span>
+      </label>
+
+      <label class="option option--subscribe">
+        <input type="radio" name="purchase">
+        <span class="option__control" aria-hidden="true"></span>
+        <span class="option__label">
+          <span class="option__text">Subscribe (SAVE 20%)</span>
+          <span class="option__divider">|</span>
+          <span class="option__price option__price--accent">$30</span>
+        </span>
+      </label>
+    </section>
+
+    <section class="purchase-actions" aria-label="Purchase actions">
+      <div class="quantity-control" role="group" aria-label="Quantity">
+        <button type="button" class="quantity-control__btn" aria-label="Decrease quantity">-</button>
+        <span class="quantity-control__value" aria-live="polite">1</span>
+        <button type="button" class="quantity-control__btn" aria-label="Increase quantity">+</button>
+      </div>
+
+      <button class="add-to-cart" type="button">ADD TO CART</button>
+    </section>
+
+    <section class="product-accordion" aria-label="Product details">
+      <div class="accordion__item is-open">
+        <button class="accordion__header" aria-expanded="true">
+          <span class="accordion__title">Ingredients</span>
+          <span class="accordion__icon" aria-hidden="true">−</span>
+        </button>
+        <div class="accordion__panel">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere ac ut.
+          </p>
+        </div>
+        <div class="accordion__rule" aria-hidden="true"></div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__header" aria-expanded="false">
+          <span class="accordion__title">Ingredients</span>
+          <span class="accordion__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="accordion__panel" hidden="">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere ac ut.
+          </p>
+        </div>
+        <div class="accordion__rule" aria-hidden="true"></div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__header" aria-expanded="false">
+          <span class="accordion__title">Ingredients</span>
+          <span class="accordion__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="accordion__panel" hidden="">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere ac ut.
+          </p>
+        </div>
+        <div class="accordion__rule" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    
+    <section class="related-products">
+        <h2 class="related-products__heading">YOU MAY ALSO LIKE</h2>
+        <div class="related-products__wrapper">
+          <div class="related-products__carousel" data-carousel="">
+            <div class="product-card">
+                <img src="/productimg.17ec14b0.png" alt="Hand Pomade" class="product-card__image">
+                <h3 class="product-card__title">HAND POMADE / POMMADE MAINS</h3>
+                <p class="product-card__description">NOURISHMENT FOR YOUR HANDS</p>
+                <span class="product-card__price">159.00 KR</span>
+            </div>
+            
+            <div class="product-card">
+                <img src="/productimg.17ec14b0.png" alt="Hand Pomade" class="product-card__image">
+                <h3 class="product-card__title">HAND POMADE / POMMADE MAINS</h3>
+                <p class="product-card__description">NOURISHMENT FOR YOUR HANDS</p>
+                <span class="product-card__price">159.00 KR</span>
+            </div>
+            
+            <div class="product-card">
+                <img src="/productimg.17ec14b0.png" alt="Hand Pomade" class="product-card__image">
+                <h3 class="product-card__title">HAND POMADE / POMMADE MAINS</h3>
+                <p class="product-card__description">NOURISHMENT FOR YOUR HANDS</p>
+                <span class="product-card__price">159.00 KR</span>
+            </div>
+            
+            <div class="product-card">
+                <img src="/productimg.17ec14b0.png" alt="Hand Pomade" class="product-card__image">
+                <h3 class="product-card__title">HAND POMADE / POMMADE MAINS</h3>
+                <p class="product-card__description">NOURISHMENT FOR YOUR HANDS</p>
+                <span class="product-card__price">159.00 KR</span>
+            </div>
+            
+            <div class="product-card">
+                <img src="/productimg.17ec14b0.png" alt="Hand Pomade" class="product-card__image">
+                <h3 class="product-card__title">HAND POMADE / POMMADE MAINS</h3>
+                <p class="product-card__description">NOURISHMENT FOR YOUR HANDS</p>
+                <span class="product-card__price">159.00 KR</span>
+            </div>
+            
+            <div class="product-card">
+              <img src="/productimg.17ec14b0.png" alt="Hand Pomade" class="product-card__image">
+              <h3 class="product-card__title">HAND POMADE / POMMADE MAINS</h3>
+              <p class="product-card__description">NOURISHMENT FOR YOUR HANDS</p>
+              <span class="product-card__price">159.00 KR</span>
+            </div>
+          </div>
+        </div>
+    </section>
+
+</main>
+
 
 </body></html>
